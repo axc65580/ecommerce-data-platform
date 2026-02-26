@@ -2,6 +2,23 @@
 
 A production-grade data engineering project simulating a real-time e-commerce analytics platform. Built with modern open-source tools running entirely locally with no cloud costs.
 
+## Screenshots
+
+### Airflow Pipeline DAG
+![Airflow DAG](screenshots/Screenshot%202026-02-26%20171532.png)
+
+### dbt Lineage Graph
+![dbt Lineage](screenshots/Screenshot%202026-02-26%20173615.png)
+
+### Gold Layer Business Metrics
+![Gold Layer](screenshots/Screenshot%202026-02-26%20173732.png)
+
+### Data Quality 10/10 Checks
+![Data Quality](screenshots/Screenshot%202026-02-26%20174307.png)
+
+### All Services Running
+![Docker Services](screenshots/Screenshot%202026-02-26%20174346.png)
+
 ## Architecture
 
 \\\
@@ -164,7 +181,7 @@ Open http://localhost:8080 (admin/admin)
 ## Key Design Decisions
 
 **Why Delta Lake over plain Parquet?**
-Delta Lake provides ACID transactions, schema enforcement, and time travel — critical for production data pipelines where late-arriving data and schema changes are common.
+Delta Lake provides ACID transactions, schema enforcement, and time travel - critical for production data pipelines where late-arriving data and schema changes are common.
 
 **Why DuckDB for the warehouse layer?**
 DuckDB is an embedded analytical database that runs in-process with no server required. For local development it provides full SQL capabilities with excellent performance on Parquet files.
