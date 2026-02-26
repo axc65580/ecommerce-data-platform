@@ -1,0 +1,10 @@
+kafka-python==2.0.2
+pyspark==3.5.1
+delta-spark==3.1.0
+duckdb==0.10.2
+dbt-core==1.7.0
+dbt-duckdb==1.7.0
+great-expectations==0.18.12
+pandas==2.2.1
+faker==24.0.0
+python-dotenv==1.0.1
