@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: gold
+    description: Gold layer Delta Lake tables loaded into DuckDB
+    tables:
+      - name: revenue_by_product
+        description: Revenue aggregated by product
+      - name: user_summary
+        description: User level purchase summary
+      - name: conversion_funnel
+        description: Event funnel counts
